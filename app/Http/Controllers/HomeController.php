@@ -13,7 +13,7 @@ class HomeController extends Controller
     	$user = \Auth::user();
     	// dd($user->hasRole('owner'));
     	// dd($user->hasRole('admin')); //false
-    	dd($user->can('edit-user')); //true
+    	// dd($user->can('edit-user')); //true
 
         return view('home');
     }
